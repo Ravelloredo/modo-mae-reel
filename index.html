@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modo Mãe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+
+  <main class="phone-frame">
+    <div class="phone-glow" id="phoneGlow"></div>
+    <div class="phone-screen">
+      <div class="noise"></div>
+      <div class="scanlines"></div>
+
+      <!-- LOADING -->
+      <section id="loading" class="screen active">
+        <div class="screen-inner center">
+          <div class="brand">mother_mode.sys</div>
+          <div class="loading-box">
+            <div class="loading-label">Inicializando sistema biológico</div>
+            <div class="loader-track">
+              <div class="loader-fill"></div>
+            </div>
+            <div class="loading-sub">Preparando conexão entre mãe e bebê...</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DETECÇÃO -->
+      <section id="detect" class="screen">
+        <div class="screen-inner center">
+          <div class="detect-badge">CONEXÃO ESTABELECIDA</div>
+          <h1 class="main-title">PROCESSO DE GERAÇÃO INICIADO</h1>
+        </div>
+      </section>
+
+      <!-- MONITOR -->
+      <section id="monitor" class="screen">
+        <div class="screen-inner">
+          <div class="top-tag">conexão biológica ativa</div>
+
+          <div class="monitor-card">
+            <div class="monitor-header">
+              <span>MONITOR CARDÍACO</span>
+              <span class="bpm-number" id="bpmNumber">165 BPM</span>
+            </div>
+
+            <div class="ecg-wrap">
+              <svg class="ecg-svg" viewBox="0 0 600 120" preserveAspectRatio="none" aria-hidden="true">
+                <path
+                  class="ecg-path"
+                  d="M0,60
+                     L50,60
+                     L70,60
+                     L85,48
+                     L98,70
+                     L112,18
+                     L128,92
+                     L146,60
+                     L220,60
+                     L240,60
+                     L255,48
+                     L268,70
+                     L282,18
+                     L298,92
+                     L316,60
+                     L390,60
+                     L410,60
+                     L425,48
+                     L438,70
+                     L452,18
+                     L468,92
+                     L486,60
+                     L600,60" />
+              </svg>
+            </div>
+
+            <div class="monitor-footer">
+              batimentos detectados no primeiro ultrassom
+            </div>
+          </div>
+
+          <p class="desc-text">Sistema identificou uma nova vida em desenvolvimento.</p>
+          <p class="desc-text secondary-text">Conexão detectada: mãe ↔ filho</p>
+
+          <button id="startModeButton" class="action-btn">INICIAR MODO MÃE</button>
+        </div>
+      </section>
+
+      <!-- MODOS -->
+      <section id="modes" class="screen">
+        <div class="screen-inner">
+          <div class="section-label">painel principal</div>
+          <h2 class="section-title">MODOS DE MÃE</h2>
+
+          <div class="modes-list">
+            <button class="mode-card active-mode" id="generationButton">
+              <div>
+                <div class="mode-title">Modo Geração</div>
+                <div class="mode-sub">Ativo agora</div>
+              </div>
+              <div class="mode-status online">DISPONÍVEL</div>
+            </button>
+
+            <div class="mode-card locked">
+              <div>
+                <div class="mode-title">Modo Primeiro Choro</div>
+                <div class="mode-sub">Fase futura</div>
+              </div>
+              <div class="mode-status">BLOQUEADO</div>
+            </div>
+
+            <div class="mode-card locked">
+              <div>
+                <div class="mode-title">Modo Colo Infinito</div>
+                <div class="mode-sub">Fase futura</div>
+              </div>
+              <div class="mode-status">BLOQUEADO</div>
+            </div>
+
+            <div class="mode-card locked">
+              <div>
+                <div class="mode-title">Modo Proteção Instintiva</div>
+                <div class="mode-sub">Fase futura</div>
+              </div>
+              <div class="mode-status">BLOQUEADO</div>
+            </div>
+
+            <div class="mode-card locked">
+              <div>
+                <div class="mode-title">Modo Noites Sem Dormir</div>
+                <div class="mode-sub">Fase futura</div>
+              </div>
+              <div class="mode-status">BLOQUEADO</div>
+            </div>
+
+            <div class="mode-card locked">
+              <div>
+                <div class="mode-title">Modo Amor Inexplicável</div>
+                <div class="mode-sub">Fase futura</div>
+              </div>
+              <div class="mode-status">BLOQUEADO</div>
+            </div>
+
+            <div class="mode-card locked">
+              <div>
+                <div class="mode-title">Modo Força Extrema</div>
+                <div class="mode-sub">Fase futura</div>
+              </div>
+              <div class="mode-status">BLOQUEADO</div>
+            </div>
+
+            <div class="mode-card locked">
+              <div>
+                <div class="mode-title">Modo Conexão Eterna</div>
+                <div class="mode-sub">Fase futura</div>
+              </div>
+              <div class="mode-status">BLOQUEADO</div>
+            </div>
+
+            <div class="mode-card locked">
+              <div>
+                <div class="mode-title">Modo Orgulho Silencioso</div>
+                <div class="mode-sub">Fase futura</div>
+              </div>
+              <div class="mode-status">BLOQUEADO</div>
+            </div>
+
+            <div class="mode-card locked">
+              <div>
+                <div class="mode-title">Modo Desapego</div>
+                <div class="mode-sub">Fase futura</div>
+              </div>
+              <div class="mode-status">BLOQUEADO</div>
+            </div>
+
+            <div class="mode-card locked">
+              <div>
+                <div class="mode-title">Modo Proteção Absoluta</div>
+                <div class="mode-sub">Fase futura</div>
+              </div>
+              <div class="mode-status">BLOQUEADO</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GERAÇÃO -->
+      <section id="generation" class="screen">
+        <div class="screen-inner">
+          <div class="section-label">modo ativo</div>
+          <h2 class="section-title">MODO GERAÇÃO</h2>
+
+          <div class="status-grid">
+            <div class="status-card">
+              <span class="status-name">Energia</span>
+              <strong class="status-value">Compartilhada</strong>
+            </div>
+            <div class="status-card">
+              <span class="status-name">Corpo</span>
+              <strong class="status-value">Em adaptação</strong>
+            </div>
+            <div class="status-card">
+              <span class="status-name">Emoções</span>
+              <strong class="status-value">Intensas</strong>
+            </div>
+            <div class="status-card">
+              <span class="status-name">Amor</span>
+              <strong class="status-value">Crescendo</strong>
+            </div>
+          </div>
+
+          <div class="big-message">DOIS CORAÇÕES. UM SÓ CORPO.</div>
+          <div class="next-phase">Preparando próxima fase...</div>
+
+          <button id="movementButton" class="action-btn secondary-btn">DESCOBRIR SEXO?</button>
+        </div>
+      </section>
+
+      <!-- TEASER -->
+      <section id="teaser" class="screen">
+        <div class="screen-inner center">
+          <div class="detect-badge">MENINO OU MENINA?</div>
+          <h2 class="section-title teaser-title">Em breve</h2>
+          <div class="next-phase">Carregando...</div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
